@@ -1,4 +1,10 @@
-import logo from './logo.svg';
+/*
+Course Code:    COMP3123
+Lab Exercise:   8
+Student Name:   Julien Widmer
+Student ID:     101320111
+*/
+
 import './App.css';
 import EntryForm from "./EntryForm";
 

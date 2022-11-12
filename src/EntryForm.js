@@ -1,4 +1,11 @@
-import React, {Component} from "react";
+/*
+Course Code:    COMP3123
+Lab Exercise:   8
+Student Name:   Julien Widmer
+Student ID:     101320111
+*/
+
+import React from "react";
 
 class EntryForm extends React.Component {
     constructor(props) {
@@ -25,7 +32,7 @@ class EntryForm extends React.Component {
     }
 
     handleSubmit(event) {
-        if (this.state.termsConditionsAccepted != undefined && this.state.termsConditionsAccepted) {
+        if (this.state.termsConditionsAccepted !== undefined && this.state.termsConditionsAccepted) {
             this.setState({
                 showSubmission: true,
                 showError: false
@@ -112,7 +119,7 @@ class EntryForm extends React.Component {
                             <label htmlFor="inputProvince">Province</label>
                             <select id="inputProvince" className="form-control" name="province"
                                     value={this.state.inputProvince} onChange={this.handleChange}>
-                                <option defaultValue="" disabled hidden>Choose...</option>
+                                <option selected disabled hidden>Choose...</option>
                                 <option value="Alberta">Alberta</option>
                                 <option value="British Columbia">British Columbia</option>
                                 <option value="Manitoba">Manitoba</option>
