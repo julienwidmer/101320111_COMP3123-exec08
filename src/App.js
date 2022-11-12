@@ -5,7 +5,10 @@ import EntryForm from "./EntryForm";
 function App() {
   return (
     <div className="App">
-     <EntryForm/>
+        <div className="container">
+            <h1 className="p-2 pt-4">Data Entry Form</h1>
+            <EntryForm/>
+        </div>
     </div>
   );
 }
